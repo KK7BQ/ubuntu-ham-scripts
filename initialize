@@ -1,0 +1,8 @@
+# 2/23/2017 Load ubuntu 14.04 on a scaled down laptop then apply the below script
+add-apt-repository ppa:ubuntu-hams-updates/ppa
+apt-add-repository ppa:dansmith/chirp-snapshots
+apt-get update
+apt-get install -f chirp-daily -y
+apt-get install -f wine winetricks ubuntu-edu-secondary ubuntu-edu-tertiary acfax aldo antennavis aprsdigi avrdude ax25mail-utils ax25-apps ax25-tools ax25-xtools baycomepp baycomusb git cqrlog cw cwcp cwdaemon fbb fldigi gcb glfer gnuradio gpredict gpsman grig gsmc hamexam hamfax extra-xdg-menus icom klog libax25 libhamlib-utils linpsk morse morse-x multimon nec2c p10cfgd qrq qsstv soundmodem splat tk2 tk5 tlf trustedqsl twclock twpsk wsjt wwl xastir xcwcp xdemorse xdx xlog xlog-data xnec2c xnecview yagiuda -y
+apt-get upgrade
+# apt-get dist-upgrade
